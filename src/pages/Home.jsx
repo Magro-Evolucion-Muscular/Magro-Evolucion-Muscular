@@ -10,7 +10,7 @@ function Home() {
   return (
     <>
       <Meta pageTitle="Magro Evolución Muscular" />
-
+<h1>hola</h1>
       <Container class1="home-wrapper py-5">
         <div className="banners-wrapper">
           <div className="main-banner">

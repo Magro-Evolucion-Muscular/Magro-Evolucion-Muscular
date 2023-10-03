@@ -6,22 +6,21 @@ function ProductCard({ grid }) {
   let location = useLocation();
   return (
     <>
-      <Link to={":id"}
+      <Link
+        to={`${
+          location.pathname == "/"
+            ? "/tienda/:id"
+            : location.pathname == "/tienda/:id"
+            ? "/tienda/:id"
+            : ":id"
+        }`}
         className={`product-item ${
           location.pathname == "/tienda" ? `gr-${grid}` : "col-3"
         }`}
       >
         <div className="product-img ">
-          <img
-            src="/images/shaker1.png"
-            className="img-fluid"
-            alt="product"
-          />
-          <img
-            src="/images/shaker2.png"
-            className="img-fluid"
-            alt="product"
-          />
+          <img src="/images/shaker1.png" className="img-fluid" alt="product" />
+          <img src="/images/shaker2.png" className="img-fluid" alt="product" />
         </div>
         <div className="product-content">
           <h6 className="brand">Shakers</h6>
